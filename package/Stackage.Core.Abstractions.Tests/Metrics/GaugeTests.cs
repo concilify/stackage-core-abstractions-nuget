@@ -48,9 +48,9 @@ namespace Stackage.Core.Abstractions.Tests.Metrics
       {
          var dimensions = new Dictionary<string, object>();
 
-         var counter = new Counter {Dimensions = dimensions};
+         var gauge = new Gauge {Dimensions = dimensions};
 
-         Assert.That(counter.Dimensions, Is.SameAs(dimensions));
+         Assert.That(gauge.Dimensions, Is.SameAs(dimensions));
       }
    }
 }

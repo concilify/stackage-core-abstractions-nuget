@@ -6,7 +6,7 @@ namespace Stackage.Core.Abstractions.Metrics
    {
       public string Name { get; set; }
 
-      public IDictionary<string, object> Dimensions { get; } = new Dictionary<string, object>();
+      public IDictionary<string, object> Dimensions { get; set; } = new Dictionary<string, object>();
 
       public double Value { get; set; }
    }

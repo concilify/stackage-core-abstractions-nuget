@@ -18,10 +18,10 @@ steps:
   parameters:
     version: $(version)
 
-- task: DotNetCoreCLI@2
+- task: NuGetCommand@2
   inputs:
-    command: 'push'
-    nuGetFeedType: 'external'
+    command: push
+    nuGetFeedType: external
     packagesToPush: $(Build.ArtifactStagingDirectory)/*.nupkg
     publishFeedCredentials: NuGet
-  displayName: 'Publish'
+  displayName: Publish

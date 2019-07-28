@@ -25,8 +25,8 @@ steps:
 - task: DotNetCoreCLI@2
   condition: and(succeeded(), in(variables['Build.Reason'], 'Manual', 'IndividualCI', 'BatchedCI'))
   inputs:
-    command: 'push'
-    nuGetFeedType: 'internal'
+    command: push
+    nuGetFeedType: internal
     packagesToPush: $(Build.ArtifactStagingDirectory)/*.nupkg
-    publishVstsFeed: default
-  displayName: 'Publish'
+    publishVstsFeed: ci-builds
+  displayName: Publish

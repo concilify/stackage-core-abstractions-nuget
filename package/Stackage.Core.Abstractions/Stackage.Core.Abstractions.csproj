@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+      <TargetFramework>netstandard2.0</TargetFramework>
+      <Product>Stackage</Product>
+      <Title>Stackage.Core.Abstractions</Title>
+      <Description>Contracts for Stackage.Core</Description>
+      <Authors>Andrew Craven</Authors>
+      <RootNamespace>Stackage.Core.Abstractions</RootNamespace>
+      <AssemblyName>Stackage.Core.Abstractions</AssemblyName>
+      <Version>0.0.0</Version>
+      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+   </PropertyGroup>
+
+   <PropertyGroup>
+      <PackageId>Stackage.Core.Abstractions</PackageId>
+      <RepositoryType>git</RepositoryType>
+      <RepositoryUrl>https://dev.azure.com/acraven/stackage/_git/core-abstractions</RepositoryUrl>
+   </PropertyGroup>
+</Project>

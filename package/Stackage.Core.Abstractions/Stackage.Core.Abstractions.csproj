@@ -16,4 +16,8 @@
       <RepositoryType>git</RepositoryType>
       <RepositoryUrl>https://dev.azure.com/acraven/stackage/_git/core-abstractions</RepositoryUrl>
    </PropertyGroup>
+
+   <ItemGroup>
+     <PackageReference Include="Polly" Version="7.1.0" />
+   </ItemGroup>
 </Project>

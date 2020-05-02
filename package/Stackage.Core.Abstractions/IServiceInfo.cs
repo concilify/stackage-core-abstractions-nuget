@@ -10,6 +10,6 @@ namespace Stackage.Core.Abstractions
 
       string Host { get; }
 
-      Uri BaseAddress { get; }
+      string BaseAddress { get; }
    }
 }

@@ -1,3 +1,5 @@
+using System;
+
 namespace Stackage.Core.Abstractions
 {
    public interface IServiceInfo
@@ -7,5 +9,7 @@ namespace Stackage.Core.Abstractions
       string Version { get; }
 
       string Host { get; }
+
+      Uri BaseAddress { get; }
    }
 }

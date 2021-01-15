@@ -1,7 +1,9 @@
+using System;
+
 namespace Stackage.Core.Abstractions
 {
    public interface IGuidGenerator
    {
-      string Generate();
+      Guid Generate();
    }
 }

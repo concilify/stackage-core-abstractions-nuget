@@ -17,17 +17,15 @@ namespace Stackage.Core.Abstractions.Polly
          IRateLimiter rateLimiter,
          Func<Context, Exception, Task> onRejectionAsync = null);
 
-      IAsyncPolicy CreateAsyncTimingPolicy(
+      IAsyncPolicy CreateAsyncMetricsPolicy(
          string name,
          IMetricSink metricSink,
-         IDictionary<string, object> policyDimensions = null,
          Func<Context, Task> onSuccessAsync = null,
          Func<Context, Exception, Task> onExceptionAsync = null);
 
-      IAsyncPolicy<TResult> CreateAsyncTimingPolicy<TResult>(
+      IAsyncPolicy<TResult> CreateAsyncMetricsPolicy<TResult>(
          string name,
          IMetricSink metricSink,
-         IDictionary<string, object> policyDimensions = null,
          Func<Context, TResult, Task> onSuccessAsync = null,
          Func<Context, Exception, Task> onExceptionAsync = null);
    }

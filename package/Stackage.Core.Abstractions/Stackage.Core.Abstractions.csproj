@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;netcoreapp3.1;net5.0</TargetFrameworks>
     <Product>Stackage</Product>
     <Title>Stackage.Core.Abstractions</Title>
     <Description>Contracts for Stackage.Core</Description>
@@ -14,7 +14,7 @@
   <PropertyGroup>
     <PackageId>Stackage.Core.Abstractions</PackageId>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://dev.azure.com/acraven/stackage/_git/core-abstractions</RepositoryUrl>
+    <RepositoryUrl>https://github.com/concilify/stackage-core-abstractions-nuget</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

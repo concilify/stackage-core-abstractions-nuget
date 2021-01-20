@@ -9,7 +9,7 @@ namespace Stackage.Core.Abstractions.Tests.Metrics
       [Test]
       public void should_be_implementation_of_metric()
       {
-         var gauge = new Gauge();
+         var gauge = new Gauge("name");
 
          Assert.That(gauge, Is.InstanceOf<IMetric>());
       }
@@ -17,18 +17,18 @@ namespace Stackage.Core.Abstractions.Tests.Metrics
       [Test]
       public void dimensions_should_be_empty()
       {
-         var gauge = new Gauge();
+         var gauge = new Gauge("name");
 
          Assert.That(gauge.Dimensions, Is.Not.Null);
          Assert.That(gauge.Dimensions.Count, Is.EqualTo(0));
       }
 
       [Test]
-      public void should_have_string_name_property_setter()
+      public void name_should_be_set()
       {
          const string name = "metric-name";
 
-         var gauge = new Gauge {Name = name};
+         var gauge = new Gauge(name);
 
          Assert.That(gauge.Name, Is.EqualTo(name));
       }
@@ -38,7 +38,7 @@ namespace Stackage.Core.Abstractions.Tests.Metrics
       {
          const double value = 12.79;
 
-         var gauge = new Gauge {Value = value};
+         var gauge = new Gauge("name") {Value = value};
 
          Assert.That(gauge.Value, Is.EqualTo(value));
       }
@@ -48,7 +48,7 @@ namespace Stackage.Core.Abstractions.Tests.Metrics
       {
          var dimensions = new Dictionary<string, object>();
 
-         var gauge = new Gauge {Dimensions = dimensions};
+         var gauge = new Gauge("name") {Dimensions = dimensions};
 
          Assert.That(gauge.Dimensions, Is.SameAs(dimensions));
       }

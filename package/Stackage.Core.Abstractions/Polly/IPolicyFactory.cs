@@ -11,22 +11,22 @@ namespace Stackage.Core.Abstractions.Polly
    {
       IAsyncPolicy CreateAsyncRateLimitPolicy(
          IRateLimiter rateLimiter,
-         Func<Context, Exception, Task> onRejectionAsync = null);
+         Func<Context, Exception, Task>? onRejectionAsync = null);
 
       IAsyncPolicy<TResult> CreateAsyncRateLimitPolicy<TResult>(
          IRateLimiter rateLimiter,
-         Func<Context, Exception, Task> onRejectionAsync = null);
+         Func<Context, Exception, Task>? onRejectionAsync = null);
 
       IAsyncPolicy CreateAsyncMetricsPolicy(
          string name,
          IMetricSink metricSink,
-         Func<Context, Task> onSuccessAsync = null,
-         Func<Context, Exception, Task> onExceptionAsync = null);
+         Func<Context, Task>? onSuccessAsync = null,
+         Func<Context, Exception, Task>? onExceptionAsync = null);
 
       IAsyncPolicy<TResult> CreateAsyncMetricsPolicy<TResult>(
          string name,
          IMetricSink metricSink,
-         Func<Context, TResult, Task> onSuccessAsync = null,
-         Func<Context, Exception, Task> onExceptionAsync = null);
+         Func<Context, TResult, Task>? onSuccessAsync = null,
+         Func<Context, Exception, Task>? onExceptionAsync = null);
    }
 }

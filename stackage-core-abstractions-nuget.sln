@@ -3,9 +3,6 @@
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "package", "package", "{41579FEA-ACEC-4CFE-84E7-7B94C78C2B58}"
-ProjectSection(SolutionItems) = preProject
-	package\NuGet.config = package\NuGet.config
-EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stackage.Core.Abstractions", "package\Stackage.Core.Abstractions\Stackage.Core.Abstractions.csproj", "{6FD88521-06CF-4A16-9DBE-F2290560F64D}"
 EndProject
@@ -16,14 +13,6 @@ ProjectSection(SolutionItems) = preProject
 	.editorconfig = .editorconfig
 	.gitignore = .gitignore
 	README.md = README.md
-EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pipelines", "pipelines", "{7C676B5E-755C-41FC-8755-46A8CE17D20B}"
-ProjectSection(SolutionItems) = preProject
-	pipelines\azure-pipelines.ci.yaml = pipelines\azure-pipelines.ci.yaml
-	pipelines\azure-pipelines.pr.yaml = pipelines\azure-pipelines.pr.yaml
-	pipelines\azure-pipelines.release.yaml = pipelines\azure-pipelines.release.yaml
-	pipelines\azure-pipelines.steps.yaml = pipelines\azure-pipelines.steps.yaml
 EndProjectSection
 EndProject
 Global
@@ -67,6 +56,5 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6FD88521-06CF-4A16-9DBE-F2290560F64D} = {41579FEA-ACEC-4CFE-84E7-7B94C78C2B58}
 		{90FD9125-DFEA-40D8-AA57-BC8E429CF19E} = {41579FEA-ACEC-4CFE-84E7-7B94C78C2B58}
-		{7C676B5E-755C-41FC-8755-46A8CE17D20B} = {4E6E26E9-BE2A-41F7-910C-1A004448DD8F}
 	EndGlobalSection
 EndGlobal

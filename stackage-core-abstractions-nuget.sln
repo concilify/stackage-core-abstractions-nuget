@@ -15,6 +15,13 @@ ProjectSection(SolutionItems) = preProject
 	README.md = README.md
 EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{B275611D-401B-491E-AABA-6E3C3699E463}"
+ProjectSection(SolutionItems) = preProject
+	.github\workflows\ci.yml = .github\workflows\ci.yml
+	.github\workflows\release.yml = .github\workflows\release.yml
+	.github\workflows\release-preview.yml = .github\workflows\release-preview.yml
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,5 +63,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6FD88521-06CF-4A16-9DBE-F2290560F64D} = {41579FEA-ACEC-4CFE-84E7-7B94C78C2B58}
 		{90FD9125-DFEA-40D8-AA57-BC8E429CF19E} = {41579FEA-ACEC-4CFE-84E7-7B94C78C2B58}
+		{B275611D-401B-491E-AABA-6E3C3699E463} = {4E6E26E9-BE2A-41F7-910C-1A004448DD8F}
 	EndGlobalSection
 EndGlobal

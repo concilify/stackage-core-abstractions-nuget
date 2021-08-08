@@ -1,7 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Stackage.Core.Abstractions.Polly.RateLimit
+namespace Stackage.Core.Abstractions.RateLimiting
 {
    public interface IRateLimiter
    {

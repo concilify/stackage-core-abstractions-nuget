@@ -1,7 +1,6 @@
 using System;
 using System.Threading.Tasks;
 using Polly;
-using Stackage.Core.Abstractions.Metrics;
 using Stackage.Core.Abstractions.RateLimiting;
 
 namespace Stackage.Core.Abstractions.Polly
